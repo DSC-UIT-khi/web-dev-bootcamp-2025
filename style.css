@@ -1,107 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 28px;
-    background-color: white;
+
+h1 {
+  font-size: 40px;
 }
-nav ol{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    gap: 22px;
+
+h3 {
+  font-size: 20px;
 }
-nav ol li a{
-    color: black;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 28px;
+  background-color: white;
 }
-.logo{
-    width: 70px;
+nav ol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 22px;
 }
-.btn{
-    padding: 8px 20px;
-    border-radius: 20px;
-    border: none;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
+nav ol li a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
-.btn a{
-    color: white;
-    text-decoration: none;
+.logo {
+  width: 70px;
 }
-.section-1{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/Images/Hero\ Section\ Image.webp);
-    background-size: cover;
-    color: white;
+.btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
-.main-headings{
-    padding: 100px 90px;
-    width: 50vw;
-    font-family: Arial, Helvetica, sans-serif;
+.btn a {
+  color: white;
+  text-decoration: none;
 }
-.main-headings h1{
-    font-size: 50px;
-    text-align: left;
-    text-decoration: none;
-    padding: 8px 0px;
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Images/Hero\ Section\ Image.webp);
+  background-size: cover;
+  color: white;
 }
-.main-headings p{
-    font-size: 18px;
-    padding: 12px 0px;
-    line-height: 1.3;
+.main-headings {
+  padding: 100px 90px;
+  width: 50vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.btn-2{
-    background-color: white;
-    padding: 10px 22px;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 20px;
-    border: none;
+.main-headings h1 {
+  font-size: 50px;
+  text-align: left;
+  text-decoration: none;
+  padding: 8px 0px;
 }
-.section-2{
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 90px;
-    background-color: black;
-    color: white;
+.main-headings p {
+  font-size: 18px;
+  padding: 12px 0px;
+  line-height: 1.3;
 }
-.about-context{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 50vw;
+.btn-2 {
+  background-color: white;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
 }
-.about-context h1{
-    font-size: 40px;
+.section-2 {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 90px;
+  background-color: black;
+  color: white;
+}
+.about-context {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50vw;
+}
+.about-context h1 {
+  font-size: 40px;
 }
 .about-context p {
-    font-size: 18px;
+  font-size: 18px;
 }
-.Products{
-    width: 100%;
-    padding: 40px 120px;
+.Products {
+  width: 100%;
+  padding: 40px 120px;
 }
-.Products div h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+.Products div h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
-.main-Product-div{
-    display: flex;
+.main-Product-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 500px); */
+  /* flex-wrap: wrap; */
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+}
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
+.product-card button {
+  border: none;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0px;
+}
+
+#Contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* #Contact:first-child { (first-child, last-child, nth-child(3))
+  background-color: #c36565;
+} */
+
+/* .contact-check:first-child {
+  color: #c36565;
+} */
+/* .contact-check:last-child {
+  color: #65c3c3;
+} */
+
+#Contact > form > div {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 500px;
+}
+
+#Contact button {
+  border: none;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#Contact input {
+  padding: 5px;
+  height: 35px;
+  border-radius: 7px;
+  border: 2px solid #00000094;
 }
