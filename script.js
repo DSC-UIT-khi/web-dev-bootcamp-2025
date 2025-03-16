@@ -47,7 +47,8 @@
 // // console.log('div ', x/y)
 // // console.log('mod ', y%x)
 
-// // i = i-1  
+// // i = i-1 
+// i++
 // // i--
 
 // // i**2  i raised tp  power 2 
@@ -180,17 +181,73 @@
 
 
 
-let title = document.querySelectorAll('p'); //first found title element
-console.log(title[2].innerText);
-let parent = document.querySelector('product-card')
-let button = document.getElementById('btn-3');
+// let title = document.querySelectorAll('title'); //first found title element
+// console.log(title[0].innerText);
+// let parent = document.querySelector('product-card')
+// let button = document.getElementById('btn-3');
 
-let newelemt = document.createElement('p');
-newelemt.innerText = 'hello'
+// let newelemt = document.createElement('p');
+// newelemt.innerText = 'hello'
 
-button.addEventListener('click' , () => {
-    document.body.appendChild(newelemt)
-})
+// button.addEventListener('click' , () => {
+//     document.body.appendChild(newelemt)
+// })
+
+
+// // setTimeout(() => {
+// //     console.log('1');
+// //     setTimeout(() => {
+// //         console.log('2');
+// //         setTimeout(() => {
+// //             console.log('3');     
+// //     })
+// // })
+// // })
+
+// let mypromis = new Promise((resolve , reject) =>{
+//     let done = false;
+//     setTimeout(() => {
+//         if(done){
+//             resolve('the task was executed properly')
+//         }
+//         else{
+//             reject('the task was not executed properly')
+//         }
+//     },3000)
+// }   
+// )
+
+// mypromis
+// .then(response => {
+//     console.log(response)
+// })
+// .catch(error => {
+//     console.log(error)
+// })
+
+// fetch("https://jsonssplaceholder.typicode.com/todos//1")
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.log(error))
+
+
+// async function fetchdata(){
+//     try {
+//         let response = await fetch ("https://jsonplaceholder.typicode.com/todos//1");
+//         let data = await response.json();
+//         console.log(data)
+//     }
+//     catch(error){
+//         console.log(error)
+//     }
+// }
+
+// fetchdata()
+
+
+
+
+
 
 
 
